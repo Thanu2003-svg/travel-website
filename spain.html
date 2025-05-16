@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Mate - Spain Highlights</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f5f5;
+    }
+
+    .section-header {
+      background-color: #ffe8cc;
+      padding: 40px 0;
+    }
+
+    .reviews-bg {
+      background-color: #fff3e0;
+    }
+
+    /* Enhanced Places Card Style */
+    .place-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .place-card img {
+      height: 220px;
+      object-fit: cover;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    .place-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .card-body h5 {
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Visiting Places -->
+<div class="section-header text-center">
+  <h2>Top Places to Visit in Spain</h2>
+</div>
+<div class="container py-5 bg-light">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card place-card shadow-sm">
+        <img src="spain2.jpg" class="card-img-top" alt="Sagrada Familia">
+        <div class="card-body">
+          <h5 class="card-title">Sagrada Familia</h5>
+          <p class="card-text">An architectural masterpiece in Barcelona designed by Gaudí, still under construction!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card place-card shadow-sm">
+        <img src="spain3.avif" class="card-img-top" alt="Alhambra Palace">
+        <div class="card-body">
+          <h5 class="card-title">Alhambra Palace</h5>
+          <p class="card-text">A stunning Islamic palace complex with gardens and scenic views in Granada.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card place-card shadow-sm">
+        <img src="plaza.webp" class="card-img-top" alt="Plaza Mayor, Madrid">
+        <div class="card-body">
+          <h5 class="card-title">Plaza Mayor, Madrid</h5>
+          <p class="card-text">The vibrant historic square at the heart of Madrid — full of life, culture, and cafés.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hotel Booking -->
+<div class="section-header text-center">
+  <h2>Top Hotels in Spain</h2>
+</div>
+<div class="container py-5 bg-light">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="barcelona.jpg" class="card-img-top" alt="Barcelona Bliss Hotel">
+        <div class="card-body">
+          <h5 class="card-title">Barcelona Bliss Hotel</h5>
+          <p class="card-text">Modern rooms just steps from Sagrada Familia. Price: €150/night.</p>
+          <a href="login.html" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="alamba.jpg" class="card-img-top" alt="Alhambra View Inn">
+        <div class="card-body">
+          <h5 class="card-title">Alhambra View Inn</h5>
+          <p class="card-text">Traditional charm with views of the palace. Price: €120/night.</p>
+          <a href="login.html" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="madrid.jpg" class="card-img-top" alt="Madrid Central Stay">
+        <div class="card-body">
+          <h5 class="card-title">Madrid Central Stay</h5>
+          <p class="card-text">Comfort in the capital near Plaza Mayor. Price: €100/night.</p>
+          <a href="login.html" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Traveler Reviews -->
+<div class="section-header text-center">
+  <h2>Traveler Reviews</h2>
+</div>
+<div class="container py-5 reviews-bg">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card p-3 shadow-sm">
+        <img src="elena.webp" alt="Jessica's Review" class="review-img">
+        <blockquote class="blockquote mb-0">
+          <p>"Barcelona Bliss Hotel was so close to everything! Loved the energy around Sagrada Familia."</p>
+          <footer class="blockquote-footer">Elena, <cite title="Barcelona">Barcelona Explorer</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-3 shadow-sm">
+        <img src="sp2.jpg" alt="Jessica's Review" class="review-img">
+        <blockquote class="blockquote mb-0">
+          <p>"The Alhambra Palace is magical at night! The Inn had the best view ever."</p>
+          <footer class="blockquote-footer">Carlos, <cite title="Granada">History Buff</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-3 shadow-sm">
+        <img src="marta.jpeg" alt="martha Review" class="review-img">
+        <blockquote class="blockquote mb-0">
+          <p>"Plaza Mayor was buzzing with life! I’d definitely recommend Madrid Central Stay."</p>
+          <footer class="blockquote-footer">Marta, <cite title="Madrid">Foodie Nomad</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

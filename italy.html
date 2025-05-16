@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Italy - The Land of Art and History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(130deg, pink, #C0C0C0, #4682B4);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+
+        .hotel-container, .places-container, .reviews-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .hotel, .place, .review {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hotel:hover, .review:hover {
+            transform: scale(1.05);
+        }
+
+        .hotel img, .place img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .hotel img:hover, .place img:hover {
+            opacity: 0.8;
+        }
+
+        .hotel p, .review p {
+            font-size: 1rem;
+            color: #333;
+            padding: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ff5733;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #c70039;
+        }
+
+        .place {
+            text-align: center;
+        }
+
+        .place img {
+            height: 200px;
+            width: 250px;
+        }
+
+        .review img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-top: 10px;
+            object-fit: cover;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .hotel-container, .places-container, .reviews-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Explore Italy - The Land of Art and History</h1>
+
+    <!-- Hotel Section -->
+    <div class="hotel-container">
+        <div class="hotel">
+            <img src="rome grand.jpeg" alt="Rome Grand Hotel">
+            <p>Rome Grand Hotel offers a luxurious experience with a view of the Colosseum.</p>
+            <a href="login.html" class="btn">Book Now</a>
+        </div>
+        <div class="hotel">
+            <img src="venenic hotel.jpg" alt="Venice Waterway Hotel">
+            <p>Stay by the canals at the Venice Waterway Hotel and enjoy a gondola ride.</p>
+            <a href="login.html" class="btn">Book Now</a>
+        </div>
+        <div class="hotel">
+            <img src="folrence hotel.jpg" alt="Florence Art Hotel">
+            <p>Experience Renaissance vibes at Florence Art Hotel, close to famous museums.</p>
+            <a href="login.html" class="btn">Book Now</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <h1>Must-Visit Places in Italy</h1>
+
+    <!-- Places Section -->
+    <div class="places-container">
+        <div class="place">
+            <img src="colosseum .jpg" alt="Colosseum, Rome">
+            <p>Colosseum, Rome</p>
+        </div>
+        <div class="place">
+            <img src="venice canals .jpeg" alt="Venice Canals">
+            <p>Venice Canals</p>
+        </div>
+        <div class="place">
+            <img src="leaning .webp" alt="Leaning Tower of Pisa">
+            <p>Leaning Tower of Pisa</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h1>What Visitors Say</h1>
+
+    <!-- Reviews Section -->
+    <div class="reviews-container">
+        <div class="review">
+            <img src="italy1.jpeg" alt="Anna">
+            <p><strong>Anna from Germany:</strong><br>“Italy was magical! The Colosseum tour was unforgettable. I felt like I traveled back in time.”</p>
+        </div>
+        <div class="review">
+            <img src="raj.jpg" alt="Raj">
+            <p><strong>Raj from India:</strong><br>“Venice is truly a dream. The hotel near the canals was peaceful and romantic.”</p>
+        </div>
+        <div class="review">
+            <img src="sophie.jpg" alt="Sophie">
+            <p><strong>Sophie from USA:</strong><br>“I loved Florence's art scene! Every corner had beauty and history combined.”</p>
+        </div>
+    </div>
+
+</body>
+</html>

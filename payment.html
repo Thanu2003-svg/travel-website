@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Billing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #1f4037, #99f2c8);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .billing-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        #confirmation {
+            font-size: 1rem;
+            margin-top: 15px;
+        }
+
+        #homeBtn {
+            background: #000;
+            color: gold;
+            border: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #homeBtn:hover {
+            background: gold;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="billing-card">
+        <h2>Booking Summary & Payment</h2>
+        <div id="summary"></div>
+
+        <div class="mb-3">
+            <label class="form-label">Payment Method</label>
+            <select class="form-select" id="paymentMethod">
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="UPI">UPI</option>
+                <option value="Cash">Cash</option>
+            </select>
+        </div>
+
+        <button class="btn btn-success w-100" onclick="confirmPayment()">Confirm Payment</button>
+        <div id="confirmation" class="mt-3 text-success fw-bold"></div>
+
+        <!-- Home Page button (initially hidden) -->
+        <button id="homeBtn" class="btn w-100 mt-3 d-none">Go to Home Page</button>
+    </div>
+
+    <script>
+        // Fetch booking data from localStorage
+        const booking = JSON.parse(localStorage.getItem("booking"));
+
+        // Define room rates
+        const roomRates = {
+            deluxe: 4000,
+            suite: 6000,
+            standard: 2500
+        };
+
+        // Calculate total bill
+        const total = booking.days * roomRates[booking.room];
+
+        // Display booking summary
+        document.getElementById("summary").innerHTML = `
+            <p><strong>Name:</strong> ${booking.name}</p>
+            <p><strong>Room Type:</strong> ${booking.room.charAt(0).toUpperCase() + booking.room.slice(1)} Room</p>
+            <p><strong>Number of Days:</strong> ${booking.days}</p>
+            <p><strong>Total Bill:</strong> ₹${total}</p>
+        `;
+
+        // Handle payment confirmation
+        function confirmPayment() {
+            const method = document.getElementById("paymentMethod").value;
+
+            document.getElementById("confirmation").innerText =
+                `✅ Payment successful via ${method}. Thank you for booking with us, ${booking.name}! 🙏`;
+
+            // Show the Home Page button
+            document.getElementById("homeBtn").classList.remove("d-none");
+
+            // Clear booking data from storage
+            localStorage.removeItem("booking");
+        }
+
+        // Navigate to home page on button click
+        document.getElementById("homeBtn").addEventListener("click", function () {
+            window.location.href = "home.html"; // Replace if your homepage is different
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Paris - The City of Love</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(130deg, black, white, black);
+            text-align: center;
+        }
+
+        /* Section Title Styling */
+        h2 {
+            color: black;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* Must-Visit Places Section */
+        .place-card img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .place-card {
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+
+        .place-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Hotels Section */
+        .hotel-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .hotel-card img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .hotel-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Reviews Section */
+        .review {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .review img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+
+        .review:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-white">Explore Paris - The City of Love</h1>
+
+        <!-- Must-Visit Places Section -->
+        <h2>Must-Visit Places</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
+            <div class="col">
+                <div class="card place-card">
+                    <img src="effile tower.jpg" alt="Eiffel Tower">
+                    <p class="mt-2"><strong>Eiffel Tower</strong></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card place-card">
+                    <img src="dis.jpg" alt="Disneyland Paris">
+                    <p class="mt-2"><strong>Disneyland Paris</strong></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card place-card">
+                    <img src="notre paris.jpg" alt="Notre Dame Cathedral">
+                    <p class="mt-2"><strong>Notre Dame Cathedral</strong></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card place-card">
+                    <img src="louvre paris.jpeg" alt="Louvre Museum">
+                    <p class="mt-2"><strong>Louvre Museum</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotels Section -->
+        <h2>Top Hotels in Paris</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+            <div class="col">
+                <div class="card hotel-card">
+                    <img src="thersee hotel paris.webp" alt="Hotel Therese">
+                    <div class="card-body">
+                        <p class="card-text">Luxury hotel near Palais Royal.</p>
+                        <a href="login.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card hotel-card">
+                    <img src="fabric hotel paris.jpg" alt="Fabric Hotel">
+                    <div class="card-body">
+                        <p class="card-text">Discover top-rated hotels with ease.</p>
+                        <a href="login.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card hotel-card">
+                    <img src="Ritz paris hotel.webp" alt="Ritz Paris">
+                    <div class="card-body">
+                        <p class="card-text">Stay at the iconic Ritz Paris.</p>
+                        <a href="login.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <h2>Reviews from Travelers</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+            <div class="col">
+                <div class="card review">
+                    <img src="paris photo girl.jpg" alt="User 1">
+                    <p class="mt-2">"Loved my experience in Paris effile tower!  - Emma</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card review">
+                    <img src="paris toursist guy 1.jpg" alt="User 2">
+                    <p class="mt-2">"Disneyland Paris was a dream come true!" - Mark</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card review">
+                    <img src="paris toursist guy 3.jpg" alt="User 3">
+                    <p class="mt-2">"The Louvre Museum was breathtaking!" - Albert</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

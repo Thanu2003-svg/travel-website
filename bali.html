@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Explore Bali - The Island of Gods</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #138b1b, #c0c0c0, #4db6a6);
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+
+        .hotel img, .place img {
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hotel img:hover, .place img:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-custom {
+            background: #ff5733;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            text-decoration: none;
+        }
+
+        .btn-custom:hover {
+            background: #c70039;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-4">
+        <h1>Explore Bali - The Island of Gods</h1>
+
+        <h2 class="text-white mt-4">Top Hotels in Bali</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="ayana resort 2.jpg" class="card-img-top" alt="Ayana Resort">
+                    <div class="card-body">
+                        <h5 class="card-title">Ayana Resort & Spa</h5>
+                        <p class="card-text">Luxury resort with ocean views and private beach access.</p>
+                        <a href="booking.html" class="btn btn-custom">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="four season.jpeg" class="card-img-top" alt="Four Seasons">
+                    <div class="card-body">
+                        <h5 class="card-title">Four Seasons Resort</h5>
+                        <p class="card-text">A perfect blend of Balinese tradition and modern luxury.</p>
+                        <a href="booking.html" class="btn btn-custom">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="mandapa.jpeg" class="card-img-top" alt="Mandapa Ritz-Carlton">
+                    <div class="card-body">
+                        <h5 class="card-title">Mandapa, Ritz-Carlton</h5>
+                        <p class="card-text">A sanctuary for the soul with riverfront views and spa.</p>
+                        <a href="booking.html" class="btn btn-custom">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="text-white my-4">
+
+        <h2 class="text-white mt-4">Must-Visit Places in Bali</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="tanah hotel.jpg" class="card-img-top" alt="Tanah Lot Temple">
+                    <div class="card-body">
+                        <h5 class="card-title">Tanah Lot Temple</h5>
+                        <p class="card-text">A beautiful Hindu temple located on a rock formation in the sea.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="tegalang .jpeg" class="card-img-top" alt="Tegalalang Rice Terrace">
+                    <div class="card-body">
+                        <h5 class="card-title">Tegalalang Rice Terrace</h5>
+                        <p class="card-text">Iconic rice terraces known for stunning landscapes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="uluwatu.jpg" class="card-img-top" alt="Uluwatu Temple">
+                    <div class="card-body">
+                        <h5 class="card-title">Uluwatu Temple</h5>
+                        <p class="card-text">A sea temple with breathtaking sunset views.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="text-white my-4">
+
+        <h2 class="text-white mt-4">What Visitors Say</h2>
+        <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card mx-auto" style="max-width: 500px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Emily Johnson</h5>
+                            <p class="card-text">"Bali is magical! The beaches and culture are incredible."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card mx-auto" style="max-width: 500px;">
+                        <div class="card-body">
+                            <h5 class="card-title">James Anderson</h5>
+                            <p class="card-text">"Tegalalang Rice Terraces were stunning! Loved the local markets."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card mx-auto" style="max-width: 500px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Sophia Lee</h5>
+                            <p class="card-text">"Four Seasons Resort exceeded my expectations! Loved the views."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

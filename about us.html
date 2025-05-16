@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Travel Mate</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- AOS Animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- FontAwesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #11998e, #38ef7d);
+      color: #333;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      margin-top: 60px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .team-section h2,
+    .timeline-section h2,
+    .future-section h2 {
+      margin-bottom: 25px;
+      color: #2c3e50;
+      font-weight: bold;
+    }
+
+    .timeline {
+      border-left: 4px solid #2ecc71;
+      padding-left: 20px;
+      margin-top: 30px;
+    }
+
+    .timeline-item {
+      margin-bottom: 25px;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -12px;
+      top: 4px;
+      width: 15px;
+      height: 15px;
+      background: #2ecc71;
+      border-radius: 50%;
+    }
+
+    .timeline-item h5 {
+      margin-bottom: 5px;
+      color: #27ae60;
+    }
+
+    .card {
+      background: #f4f4f4;
+      border: none;
+      margin-bottom: 20px;
+    }
+
+    .card-title {
+      color: #2980b9;
+    }
+
+    .team-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" data-aos="fade-up">
+    <div class="team-section text-center" data-aos="fade-up">
+      <h2>About Us</h2>
+      <p><strong>Travel Mate</strong> is a hotel booking project created by three passionate tech enthusiasts:</p>
+      <p>I am  currently pursuing our B.Tech in <strong>Computer Science Engineering (CSE)</strong> with a focus on <strong>Blockchain</strong>.</p>
+      
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card p-3">
+            <img src="thanu photo.jpeg" alt="Thanu" class="team-photo">
+            <h5 class="card-title"> </h5>
+            <p class="card-text">Frontend, content & Logic Developer,Testing & Debugging Lead,FORM CONTROLS AND UI/UX DESIGN</p>
+          </div>
+        </div>
+        
+
+    <div class="timeline-section mt-5" data-aos="fade-right">
+      <h2>Our Milestones</h2>
+      <div class="row">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Week 1 - Planning</h5>
+              <p class="card-text">Brainstormed ideas, architectured and finalized "Travel Mate" as our project.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Week 2 - Design</h5>
+              <p class="card-text">Worked on the architecture and the coding part a lot with lot many animations, gallery creation and much more.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Week 3 - Development</h5>
+              <p class="card-text">Built booking form and billing page with HTML, CSS, JS, and jQuery.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Week 4 - Testing & Final Touches</h5>
+              <p class="card-text">Tested functionality, added validations, and polished UI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="future-section mt-5" data-aos="fade-left">
+      <h2>Future Developments</h2>
+      <ol>
+        <li> Add Google Maps integration for hotel locations</li>
+        <li> Add PDF download of booking receipt</li>
+        <li> Connect to real-time hotel API in backend</li>
+        <li> Integrate Razorpay or UPI for live payments</li>
+        <li> Make responsive for mobile view</li>
+      </ol>
+    </div>
+
+    <!-- Contact Us Section -->
+   <!-- Contact Us with Icons -->
+<div class="mt-5 text-center" data-aos="fade-up">
+  <h2 class="mb-4" style="color: #2c3e50;">Contact Us</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <a href="mailto:thanu1047@gmail.com" target="_blank">
+        <img src="https://img.icons8.com/color/96/gmail--v1.png" alt="Email" class="mb-2" style="width: 80px;">
+        <p class="fw-bold text-dark">Connect us on Gmail!</p>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.linkedin.com/in/adwaith-sai-krishna-panda-169a74205/" target="_blank">
+        <img src="https://img.icons8.com/color/96/linkedin.png" alt="LinkedIn" class="mb-2" style="width: 80px;">
+        <p class="fw-bold text-dark">Connect on LinkedIn</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+  </div> <!-- End container -->
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>

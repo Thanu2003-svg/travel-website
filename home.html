@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripmate</title>
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        nav a {
+            color: rgb(236, 227, 227);
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+ 
+        nav a:hover {
+            background: rgba(255, 165, 0, 0.8);
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .container h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .container p {
+            font-size: 20px;
+            max-width: 600px;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: orange;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: green;
+        }
+
+        #Places {
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay loop muted playsinline id="background-video">
+        <source src="travel mate 2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="place.html">Places</a>
+        <a href="about us.html">About Us</a>
+        <a href="about us.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to Tripmate 🌍</h1>
+        <p>Discover amazing destinations, luxurious hotels, and unforgettable experiences.</p>
+        <a href="gallery.html" class="btn">Explore Now</a>
+    </div>
+
+</body>
+</html>
